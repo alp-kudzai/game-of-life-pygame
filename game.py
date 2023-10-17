@@ -9,8 +9,8 @@ WHITE = (200,200,200)
 GREY = (127,127,127)
 # WIN_WIDTH = 760
 # WIN_HEIGHT = 760
-GRID_SIZE = 20 # i.e GRID_SIZE * GRID_SIZE are the dimensions
-CELL_SIZE = 20 # height and width of cell
+GRID_SIZE = 100 # i.e GRID_SIZE * GRID_SIZE are the dimensions
+CELL_SIZE = 2 # height and width of cell
 MARGIN = 1 # dont go below 1
 
 def calc_res():
@@ -100,7 +100,7 @@ class Game:
             #self.screen.fill('black')
             
             pg.display.update()
-            self.clock.tick(10)
+            self.clock.tick(30)
 
 Game().run()
 
